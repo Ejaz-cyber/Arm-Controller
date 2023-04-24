@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstfx.MainController">
+   <children>
+      <VBox layoutX="10.0" layoutY="90.0" prefHeight="256.0" prefWidth="579.0">
+         <children>
+            <Pane prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="163.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#nema1Minus" prefHeight="30.0" prefWidth="33.0" text="--" />
+                  <Slider fx:id="nema1Slider" blockIncrement="0.0" layoutX="216.0" layoutY="10.0" majorTickUnit="90.0" max="360.0" prefHeight="30.0" prefWidth="230.0" showTickLabels="true" value="10.0" />
+                  <Button layoutX="446.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#nema1Plus" prefHeight="30.0" prefWidth="33.0" text="++" />
+                  <Label fx:id="nema1SliderVal" layoutX="515.0" layoutY="10.0" prefHeight="30.0" prefWidth="43.0" text="${nema1Slider.value}" />
+                  <Label layoutX="41.0" layoutY="10.0" prefHeight="30.0" prefWidth="115.0" text="Nema 1" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="163.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#nema2Minus" prefHeight="30.0" prefWidth="33.0" text="--" />
+                  <Slider fx:id="nema2Slider" layoutX="216.0" layoutY="10.0" majorTickUnit="90.0" max="360.0" prefHeight="30.0" prefWidth="230.0" showTickLabels="true" />
+                  <Button layoutX="446.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#nema2Plus" prefHeight="30.0" prefWidth="33.0" text="++" />
+                  <Label fx:id="nema2SliderVal" layoutX="515.0" layoutY="10.0" prefHeight="30.0" prefWidth="43.0" text="${nema2Slider.value}" />
+                  <Label layoutX="41.0" layoutY="10.0" prefHeight="30.0" prefWidth="115.0" text="Nema 2" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="72.0" prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="163.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#servo1Minus" prefHeight="30.0" prefWidth="33.0" text="--" />
+                  <Slider fx:id="servo1Slider" layoutX="216.0" layoutY="10.0" majorTickUnit="90.0" max="180.0" prefHeight="30.0" prefWidth="230.0" showTickLabels="true" />
+                  <Button layoutX="446.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#servo1Plus" prefHeight="30.0" prefWidth="33.0" text="++" />
+                  <Label fx:id="servo1SliderVal" layoutX="515.0" layoutY="10.0" prefHeight="30.0" prefWidth="43.0" text="${servo1Slider.value}" />
+                  <Label layoutX="41.0" layoutY="10.0" prefHeight="30.0" prefWidth="115.0" text="Servo 1" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="135.0" prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="163.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#servo2Minus" prefHeight="30.0" prefWidth="33.0" text="--" />
+                  <Slider fx:id="servo2Slider" layoutX="216.0" layoutY="10.0" majorTickUnit="90.0" max="180.0" prefHeight="30.0" prefWidth="230.0" showTickLabels="true" />
+                  <Button layoutX="446.0" layoutY="10.0" minWidth="33.0" mnemonicParsing="false" onAction="#servo2Plus" prefHeight="30.0" prefWidth="33.0" text="++" />
+                  <Label fx:id="servo2SliverVal" layoutX="515.0" layoutY="10.0" prefHeight="30.0" prefWidth="43.0" text="${servo2Slider.value}" />
+                  <Label layoutX="41.0" layoutY="10.0" prefHeight="30.0" prefWidth="115.0" text="Servo 2" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="18.0" prefWidth="566.0" text="Forward Kinematics">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="195.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnRun" prefHeight="30.0" prefWidth="206.0" text="Run" />
+      <Label layoutX="368.0" layoutY="53.0" text="Enter value" />
+      <TextField fx:id="valChangeFieldId" layoutX="458.0" layoutY="49.0" onAction="#valChangeField" prefHeight="26.0" prefWidth="53.0" />
+   </children>
+</AnchorPane>

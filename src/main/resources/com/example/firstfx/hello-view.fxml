@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstfx.MainController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7591A9;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="homeBtnId" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#onClickHomeBtn" prefHeight="35.0" prefWidth="171.0" text="home" textFill="#f40000" />
+            <Button fx:id="pagebtn1" layoutX="15.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#onClickPageBtn1" prefHeight="35.0" prefWidth="171.0" text="Forward Kinematics" />
+            <Button fx:id="pagebtn2" layoutX="15.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#onClickPageBtn2" prefHeight="35.0" prefWidth="171.0" text="Inverse Kinematics" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane fx:id="rootAncorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F4FBFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="96.0" layoutY="33.0" prefHeight="30.0" prefWidth="206.0" text="Automatic Industrial Robotic Arm" textAlignment="RIGHT" />
+            <Label layoutX="34.0" layoutY="77.0" text="Mentored by : Dr. Abhro Muckerjee" />
+            <Label layoutX="34.0" layoutY="110.0" text="Group Members : " />
+            <Pane layoutX="33.0" layoutY="139.0" prefHeight="104.0" prefWidth="334.0">
+               <children>
+                  <GridPane layoutY="15.0" prefHeight="58.0" prefWidth="333.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.4" minWidth="10.0" prefWidth="156.8" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.2000244140625" minWidth="0.0" prefWidth="176.8" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Ejaz Mahmood" />
+                        <Label text="191001002059" GridPane.columnIndex="1" />
+                        <Label text="Md Sharay Ahmad" GridPane.rowIndex="1" />
+                        <Label text="191001002061" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Md Yasin Ansari" GridPane.rowIndex="2" />
+                        <Label text="191001002018" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
